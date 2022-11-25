@@ -20,10 +20,9 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   var age = parseFloat(document.getElementById("age-number").value)
-  var thursday = document.getElementById("thursday").checked
-  var tuesday = document.getElementById("tuesday").checked
+  var weekday = document.getElementById("weekday").value
 
-  if (tuesday == true || thursday == true || (age > 12 && age < 21)) {
+  if ( weekday == "tuesday" || weekday == "thursday" || (age > 12 && age < 21)) {
     document.getElementById("ticket-pricing").innerHTML =
       "<p>You are legible for student pricing.</p>"
   } else {
