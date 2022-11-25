@@ -54,14 +54,13 @@
           <span class="mdl-layout-title">Ticket Purchasing Determiner</span>
         </div>
       </header>
-      <main class="mdl-layout__content">
+            <main class="mdl-layout__content">
+        <p></p>
         <p>
-          This prgram will tell you based off your age and day of the week if
-          you may purchase a ticket to the museum. Please enter your information
-          below...
+          This program will tell you if you are legible for student pricing for museum tickets. Student pricing is avalible on Tuesdays and Thursdays for those above or below the age of 12 to 21. Student pricing is always avalible for those between the ages of 12 and 21. Please enter the information below...
         </p>
         <p></p>
-        <img src="./images/museum.png" alt="Museum" />
+        <!-- Raised button with ripple -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
             <input
@@ -77,16 +76,21 @@
           </div>
         </form>
         <p></p>
-        <!-- Raised button with ripple -->
+        <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="weekday">
+        <label class="mdl-textfield__label" for="weekday">Weekday here...</label>
+      </div>
+    </form>
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Check
+          RESULTS
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="ticket-pricing"></div>
       </main>
     </div>
   </body>
